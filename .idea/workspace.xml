@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6f3bb36-2808-4144-98ad-609a6cfeb81b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/code_review/_code_reviews_widget.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/code_review.css.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/code_review.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/code_review.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/code_review_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/code_review_controller_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/code_review_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/helpers/code_review_helper_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/code_review_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/code_reviews.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/code_review/create.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/code_review/new.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/README_FOR_APP" afterPath="$PROJECT_DIR$/doc/README_FOR_APP" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/index.html.haml" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -14,15 +27,21 @@
     <file path="/Dummy.txt" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361116926471" ignored="false" />
     <file path="/Gemfile" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361070625521" ignored="false" />
     <file path="/a.dummy" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361070871944" ignored="false" />
-    <file path="/index.html.haml" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361120612722" ignored="false" />
+    <file path="/index.html.haml" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361134653512" ignored="false" />
     <file path="/README.rdoc" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361113088734" ignored="false" />
     <file path="/development.rb" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361067255097" ignored="false" />
     <file path="/mongo.rb" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361067878563" ignored="false" />
     <file path="/devise.rb" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361070834677" ignored="false" />
-    <file path="/user.rb" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361073275255" ignored="false" />
-    <file path="/fragment.rb" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361073928160" ignored="false" />
-    <file path="/README_FOR_APP" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361113153358" ignored="false" />
-    <file path="/welcome_controller.rb" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361120925330" ignored="false" />
+    <file path="/user.rb" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361132286371" ignored="false" />
+    <file path="/fragment.rb" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361134414940" ignored="false" />
+    <file path="/README_FOR_APP" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361125197748" ignored="false" />
+    <file path="/welcome_controller.rb" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361134289128" ignored="false" />
+    <file path="/code_review.rb" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361132141547" ignored="false" />
+    <file path="/routes.rb" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361124927928" ignored="false" />
+    <file path="/code_review_controller.rb" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361132307525" ignored="false" />
+    <file path="/new.html.haml" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361127465043" ignored="false" />
+    <file path="/create.html.haml" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361128084471" ignored="false" />
+    <file path="/_code_reviews_widget.html.haml" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361133597718" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,55 +58,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="registrations_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/devise-2.2.3/app/controllers/devise/registrations_controller.rb">
+      <file leaf-file-name="code_review.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/code_review.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="5" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="36" selection-start="159" selection-end="159" vertical-scroll-proportion="-3.9230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="welcome_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="35" selection-start="84" selection-end="84" vertical-scroll-proportion="0.087628864">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README_FOR_APP" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/README_FOR_APP">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="41" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registerable.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/devise-2.2.3/lib/devise/models/registerable.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="12" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
+            <state line="1" column="22" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,16 +70,70 @@
       <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="96" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
+            <state line="18" column="17" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
+      <file leaf-file-name="fields.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/mongoid-3.1.0/lib/mongoid/fields.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="41" selection-start="319" selection-end="319" vertical-scroll-proportion="-5.8846154">
+            <state line="239" column="10" selection-start="6985" selection-end="6985" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="46" selection-start="349" selection-end="349" vertical-scroll-proportion="1.1590909">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_code_reviews_widget.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/code_review/_code_reviews_widget.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="22" selection-start="86" selection-end="86" vertical-scroll-proportion="-1.9615384">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README_FOR_APP" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/README_FOR_APP">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="code_review_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/code_review_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="35" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="processing.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/mongoid-3.1.0/lib/mongoid/attributes/processing.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="0" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,19 +157,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
-        <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/initializers/mongo.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/README.rdoc" />
-        <option value="$PROJECT_DIR$/doc/README_FOR_APP" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/welcome/index.html.haml" />
+        <option value="$PROJECT_DIR$/doc/README_FOR_APP" />
+        <option value="$PROJECT_DIR$/app/views/code_review/new.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/code_review/create.html.haml" />
+        <option value="$PROJECT_DIR$/app/models/code_review.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/views/code_review/_code_reviews_widget.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/code_review_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/welcome/index.html.haml" />
       </list>
     </option>
   </component>
@@ -348,7 +379,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code_review" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -363,24 +398,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codereviews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codereviews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -709,17 +726,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5269542" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6051213" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14993565" sideWeight="0.5579515" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48787063" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14993565" sideWeight="0.39487872" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49865228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44204852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44204852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -787,71 +804,65 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="22" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/code_review/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="44" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="284" selection-end="284" vertical-scroll-proportion="0.8192771">
+        <state line="8" column="33" selection-start="323" selection-end="323" vertical-scroll-proportion="-5.230769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/code_review/create.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="80" selection-end="80" vertical-scroll-proportion="0.15361446" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="6" selection-start="2595" selection-end="2595" vertical-scroll-proportion="0.65361446" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/shared/_links.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="10" selection-start="441" selection-end="441" vertical-scroll-proportion="0.4009434" />
-      </provider>
-    </entry>
-    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/devise-2.2.3/app/controllers/devise_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="0" selection-start="5407" selection-end="5407" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/devise-2.2.3/app/controllers/devise/registrations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+        <state line="4" column="6" selection-start="85" selection-end="85" vertical-scroll-proportion="0.20731707">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/devise-2.2.3/lib/devise/models/registerable.rb">
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_controller/metal/rescue.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="12" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
+        <state line="30" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/mongoid-3.1.0/lib/mongoid/persistence.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="41" selection-start="319" selection-end="319" vertical-scroll-proportion="-5.8846154">
+        <state line="243" column="0" selection-start="7791" selection-end="7791" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/mongoid-3.1.0/lib/mongoid/threaded/lifecycle.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="10" selection-start="2056" selection-end="2056" vertical-scroll-proportion="0.33101046">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/mongoid-3.1.0/lib/mongoid/attributes/processing.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/mongoid-3.1.0/lib/mongoid/fields.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="239" column="10" selection-start="6985" selection-end="6985" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="96" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
+        <state line="18" column="17" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -865,28 +876,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/doc/README_FOR_APP">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="41" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/code_review/_code_reviews_widget.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+        <state line="3" column="22" selection-start="86" selection-end="86" vertical-scroll-proportion="-1.9615384">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/models/code_review.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="36" selection-start="159" selection-end="159" vertical-scroll-proportion="-3.9230769">
+        <state line="1" column="22" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/mongoid-3.1.0/lib/mongoid/document.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="4" selection-start="555" selection-end="555" vertical-scroll-proportion="0.64231735">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="35" selection-start="84" selection-end="84" vertical-scroll-proportion="0.087628864">
+        <state line="2" column="0" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/code_review_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="35" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="46" selection-start="349" selection-end="349" vertical-scroll-proportion="1.1590909">
           <folding />
         </state>
       </provider>

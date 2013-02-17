@@ -1,7 +1,16 @@
-%p
-  %span Signed in as
-  %span= current_user.email
-  = link_to 'Log out', destroy_user_session_path, :method => :delete
+- if current_user
+  %p
+    %span Signed in as
+    %span= current_user.email
+    = link_to 'Log out', destroy_user_session_path, :method => :delete
+- else
+  = link_to 'Sign in', new_user_session_path
 
 
 %h1 Welcome to the CodeReviews app!!
+
+%p
+  = link_to 'Request', new_code_review_path
+  a code review
+
+= render :partial => "code_review/code_reviews_widget"

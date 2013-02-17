@@ -1,0 +1,9 @@
+%h1 Code Review Request
+
+= form_for @code_review, :url => {:action => "create"} do |new_code_review_form|
+  %div
+    = new_code_review_form.label :name
+    = new_code_review_form.text_field :name
+  %div= new_code_review_form.label :comments
+  %div= new_code_review_form.text_area :comments
+  %div= new_code_review_form.submit "Place Request"

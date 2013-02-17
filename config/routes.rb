@@ -5,4 +5,6 @@ Codereviews::Application.routes.draw do
 
   root :to => 'welcome#index'
 
+  resources :code_review
+
 end

@@ -6,11 +6,17 @@ class User
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  attr_accessible :id, :email, :password, :password_confirmation, :first_name, :last_name, :created_at, :picture, :total_requested, :total_reviewed
+  attr_accessible :id, :email, :password, :password_confirmation, :first_name, :last_name, :created_at, :picture, :total_requested, :total_reviewed, :requested, :reviewed
+
+  has_many :code_reviews, as: :requested
+  has_many :code_reviews, as: :reviewed
 
   ## Database authenticatable
   field :email,              :type => String, :default => ""
   field :encrypted_password, :type => String, :default => ""
+
+  field :requested
+  field :reviewed
   
   ## Recoverable
   field :reset_password_token,   :type => String
