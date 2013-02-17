@@ -1,3 +1,5 @@
+git@github.com:clubLowlow/codereviews.git
+
 CodeReview
   id
   reviewer_id - nullable
