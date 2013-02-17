@@ -1,6 +1,13 @@
 source 'https://rubygems.org'
+source 'http://gemcutter.org'
 
+require 'rubygems'
+require 'mongo'
+
+gem 'mongoid', '>= 3.0.3'
 gem 'rails', '3.2.1'
+gem 'devise', '>= 2.1.2'
+gem 'haml'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -21,6 +28,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+gem 'therubyrhino'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

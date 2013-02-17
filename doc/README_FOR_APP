@@ -1,2 +1,36 @@
-Use this README file to introduce your application and point to useful places in the API for learning more.
-Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+CodeReview
+  id
+  reviewer_id - nullable
+  reviewee_id
+  status - open, in process, complete
+  created_at
+  processed_at
+  completed_at
+
+functionality
+
+Request Review widget
+ allows you to create a code review
+   sends email to team that a code review is needed.  email lists all other code reviews needed and who should grab the next one
+
+Code Reviews widget
+  shows all code reviews ever, sorted by status and create date
+  allows you to take a code review
+    sends email to reviewee that code review was taken
+  allows you to complete a code review if you have taken it
+    sends email to reviewee that code review was completed
+  includes Request Review widget
+
+Active Code Reviews widget
+  same as code reviews widget, but hides the completed code reviews
+
+My Code Reviews widget
+  shows your requested code reviews that are open/in progress and your taken code reviews in progress
+  allows you to mark a code review done that you've taken
+    sends email to reviewee that you've completed the task
+  allows you to delete a requested code review
+  includes Request Review widget
+
+Leaderboard
+  shows all the developers.  # code reviews taken in last 90 days, # given in last 90 days, and +/- in last 90 days.  Last code review given date.
+
