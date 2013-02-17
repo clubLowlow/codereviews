@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6f3bb36-2808-4144-98ad-609a6cfeb81b" name="Default" comment="getting haml working on the main page">
+    <list default="true" id="e6f3bb36-2808-4144-98ad-609a6cfeb81b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/index.html.haml" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="codereviews.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html.erb" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361060188793" ignored="false" />
-    <file path="/Dummy.txt" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361113646223" ignored="false" />
+    <file path="/Dummy.txt" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361113649879" ignored="false" />
     <file path="/Gemfile" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361070625521" ignored="false" />
     <file path="/a.dummy" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361070871944" ignored="false" />
     <file path="/index.html.haml" changelist="e6f3bb36-2808-4144-98ad-609a6cfeb81b" time="1361073832749" ignored="false" />
@@ -682,7 +682,11 @@
       <created>1361113541536</created>
       <updated>1361113541536</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="getting haml working on the main page">
+      <created>1361113654609</created>
+      <updated>1361113654609</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
